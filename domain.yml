@@ -12,6 +12,11 @@ intents:
 responses:
   utter_greet:
   - text: "Привет! Как дела?"
+    buttons:
+    - title: "Контакты"
+      payload: /contacts
+    - title: "Локация" 
+      payload: /location
 
   utter_ram:
   - text: "память на сервере))"
