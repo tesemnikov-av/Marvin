@@ -1,0 +1,10 @@
+[
+  {
+    "name": "hostname",
+    "pattern": "\"[A-Za-z]+[0-9]\" # [A-Za-z]+\\-*[A-Za-z]+[0-9]*"
+  },
+  {
+    "name": "hostname",
+    "pattern": "(\\bprotva3\\b|\\bkagera2\\b)"
+  }
+]

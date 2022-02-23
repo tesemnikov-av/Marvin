@@ -1,0 +1,53 @@
+version: "3.0"
+
+intents:
+  - greet
+  - goodbye
+  - contacts
+  - location
+  - ram
+  - cpu
+  - bot_challenge
+
+responses:
+  utter_greet:
+  - text: "Привет! Как дела?"
+
+  utter_ram:
+  - text: "память на сервере))"
+
+  utter_cpu:
+  - text: "процессора на разделе"
+
+  utter_contacts:
+  - text: "контакты {hostname} администраторов"
+  - text: "попробуй написать этим людям"
+
+  utter_location:
+  - text: "сервер находится"
+
+  utter_did_that_help:
+  - text: "Чем могу помочь?"
+
+  utter_goodbye:
+  - text: "Пока!"
+
+  utter_iamabot:
+  - text: "Я робот, но я тебя понимаю!"
+
+entities:
+- hostname
+
+slots:
+  hostname:
+    type: list # text
+    # initial_values: jamna-t1
+    mappings:
+    - type: from_entity
+      entity: hostname
+      # intent: contacts
+      # not_intents: ram
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

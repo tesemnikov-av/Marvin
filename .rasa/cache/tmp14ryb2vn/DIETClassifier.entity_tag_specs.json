@@ -1,0 +1,28 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-hostname",
+      "2": "I-hostname",
+      "3": "L-hostname",
+      "4": "U-hostname",
+      "5": "B-hostnmae",
+      "6": "I-hostnmae",
+      "7": "L-hostnmae",
+      "8": "U-hostnmae",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-hostname": 1,
+      "I-hostname": 2,
+      "L-hostname": 3,
+      "U-hostname": 4,
+      "B-hostnmae": 5,
+      "I-hostnmae": 6,
+      "L-hostnmae": 7,
+      "U-hostnmae": 8,
+      "O": 0
+    },
+    "num_tags": 9
+  }
+]

@@ -1,0 +1,31 @@
+version: "3.0"
+
+stories:
+
+- story: ram 
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ram 
+  - action: utter_ram
+
+- story: cpu
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: cpu
+  - action: utter_cpu
+
+- story: location
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: location
+  - action: utter_location
+
+- story: contacts
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: contacts
+  - action: utter_contacts

@@ -1,0 +1,80 @@
+version: "3.0"
+
+nlu:
+- regex: hostname
+  examples: |
+    - "[A-Za-z]+[0-9]" # [A-Za-z]+\-*[A-Za-z]+[0-9]*
+
+- lookup: hostname
+  examples: |
+    - protva3
+    - kagera2 
+
+#- synonym: сервер
+#  examples: |
+#    - раздел
+#    - хост
+#    - машина
+#    - сервер
+#    - писюк
+#    - пк
+
+- intent: greet
+  examples: |
+    - привет там 
+    - здорова
+    - доброе утро
+    - добрый вечер 
+    - привет там 
+    - привет чувак
+    - доброе утро
+    - добрый вечер
+    - добрый день
+
+- intent: goodbye
+  examples: |
+    - пока
+    - до свидания
+    - увидимся позже
+    - доброй ночи
+    - до свидания
+    - удачи
+    - хорошего дня
+    - Увидимся
+    - пока-пока
+    - увидимся
+
+- intent: contacts 
+  examples: |
+    - кто администрирует 
+    - кому написать по поводу этого сервера [tpla-way4](hostname)
+    - кто контакт по серверу [ppla-erib7s](hostname)
+    - Нужны контакты [butash-t1](hostname)
+    - кому написать [legoyka3](hostname)
+    - кого оповестить [penza4](hostname)
+
+- intent: location 
+  examples: |
+    - где стоит [arda](hostname)
+    - где находится сервер [protva14](hostname)
+    - в каком маш зале стоит [kagera-t](hostname)
+    - в каком цоде [dnestr-psi](hostname)
+    - где расположен сервер [gang](hostname)
+
+- intent: ram 
+  examples: |
+    - сколько памяти на сервере [shelon2](hostname)
+    - сколько рам на сервере [orlik3](hostname)
+    - сколько озу [guri-t10](hostname)
+
+- intent: cpu
+  examples: |
+    - сколько процессоров [protva14](hostname)
+    - сколько цпу [selenga](hostname)
+
+- intent: bot_challenge
+  examples: |
+    - Вы бот?
+    - Ты человек?
+    - Я разговариваю с ботом?
+    - Я разговариваю с человеком? 
